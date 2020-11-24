@@ -1,40 +1,103 @@
 *{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-header{
-  display: flex;
-  width: 90%;
-  height: 10vh;
-  margin: auto;
-  align-items: center;
+html{
+  font-family: sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
 }
 
-.logo-container, .nav-links{
-  display: flex;
+a{
+  text-decoration: none;
 }
 
-.logo-container{
-  flex: 1.5;
-  align-items: center;
-}
-
-.logo{
-  font-weight: 400;
-  margin: 10px;
-}
-
-nav{
-  flex: 1;
-}
-
-.nav-links{
-  justify-content: space-around;
+ul{
   list-style: none;
 }
 
+p{
+  font-size: 16px;
+}
+
+/* potential to put image here */
+
+section{
+  padding: 5rem 0;
+}
+
+body{
+  background-color: violet;
+}
+
+/*Nav Bar Styling */
+header{
+  width: 100%;
+  height: 50px;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; */
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.3)
+}
+
+.nav-logo{
+  width: 2rem;
+}
+
+.menu-icons i{
+  font-size: 35px;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.close i{
+  color: red;
+}
+
+/* Styling for the pop out burger menu */
+.nav-list{
+  width: 250px;
+  height: 100vh;
+  background-color: burlywood;
+  position: fixed;
+  top: 0;
+  right:0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* z index used so that it stays on top of everything */
+  z-index: 155;
+  transition: all 500ms ease-in-out;
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.nav-item{
+  margin: 10px 0;
+}
+
 .nav-link{
-  text-decoration: none;
+  
 }
