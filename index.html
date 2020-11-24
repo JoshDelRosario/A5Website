@@ -13,13 +13,30 @@
         <h4 class="logo">Mostly Mad Music</h4>
       </div>
       <nav>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="#">About Us</a></li>
-          <li class="nav-link"><a href="#">Our Projects</a></li>
-          <li class="nav-link"><a href="#">Join</a></li>
-
+        <ul class="nav-links" id="menuList">
+          <li><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Our Projects</a></li>
+          <li><a class="nav-link" href="#">Join</a></li>
         </ul>
       </nav>
+      <!--Burger Menu icon, on click, show menu-->
+      <img src="images/burgerMenu.png" alt="Menu Icon" class="menu-icon" onclick="toggleMenu()">
+
+      <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.display = "none";
+
+        function toggleMenu(){
+          if (menuList.style.display === "none")
+            {
+              menuList.style.display = "block";
+            }
+          else
+            {
+              menuList.style.display = "none";
+            }
+        }
+      </script>
     </header>
   </body>
 </html>

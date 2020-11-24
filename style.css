@@ -19,6 +19,7 @@ header{
 .logo-container{
   flex: 1.5;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo{
@@ -31,5 +32,39 @@ nav{
 }
 
 .nav-links{
-  justify-content: space-evenly;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link{
+  text-decoration: none;
+}
+
+.menu-icon{
+  cursor: pointer;
+  width: 40px;
+  display: none;
+}
+
+@media only screen and (max-width:812px){
+  .nav-links{
+    display: block;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  .menu-icon{
+    display: block;
+  }
 }
