@@ -78,7 +78,7 @@ nav{
   background-color: burlywood;
   position: fixed;
   top: 0;
-  right:0;
+  right: -26rem;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -86,6 +86,11 @@ nav{
   /* z index used so that it stays on top of everything */
   z-index: 155;
   transition: all 500ms ease-in-out;
+}
+
+/* CSS sidebar inspired from https://www.youtube.com/watch?v=j_Xa7Kn59Es&t=123s */
+.nav-list.active{
+  right: 0;
 }
 
 .close{
@@ -99,5 +104,5 @@ nav{
 }
 
 .nav-link{
-  
+  font-size: 16px;
 }
