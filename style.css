@@ -300,4 +300,30 @@ footer{
     transform: scaleX(1);
   }
 
+  .mainMessage{
+    height: 60vh;
+  }
+
+  .main-message{
+    transform: translateY(60%);
+  }
+
+  .title-heading h1{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media screen and (min-width: 950px){
+  .mainMessage::before{
+    height: 22.7rem;
+    background: url("images/large-wave.png");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .mainMessage{
+    height: 75vh;
+  }
 }
