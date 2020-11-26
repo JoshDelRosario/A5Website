@@ -19,7 +19,7 @@ ul{
 }
 
 p{
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* potential to put image here */
@@ -39,7 +39,7 @@ header{
 }
 
 .container{
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -64,14 +64,14 @@ nav{
 }
 
 .close i{
-  color: red;
+  color: #eb648c;
 }
 
 /* Styling for the pop out burger menu */
 .nav-list{
   width: 250px;
   height: 100vh;
-  background-color: burlywood;
+  background-color: rgb(89, 140, 180);
   position: fixed;
   top: 0;
   right: -26rem;
@@ -101,6 +101,7 @@ nav{
 
 .nav-link{
   font-size: 16px;
+  color: #fafafa;
 }
 
 /* Main Message Section */
@@ -139,12 +140,12 @@ nav{
 }
 
 .button{
-  background-color: blue;
+  background-color: rgb(89, 140, 180);
   border-radius: 2rem;
   color: #fafafa;
   display: inline-block;
   margin-top: 2rem;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 3rem;
   text-transform: uppercase;
   transition: background-color 500ms;
 }
@@ -220,10 +221,39 @@ nav{
   margin: 2rem 0;
 }
 
+/* lower image section */
+.lowerImage{
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(135deg, rgba(49,24,131,0.3) 0%, rgba(72,56,149, 0.8)100%);
+  background-size: cover;
+  position: relative;
+}
+
+.lowerImage::before{
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 4.7rem;
+  background: url("images/small-wave-reverse.png") center no-repeat;
+  background-size: cover;
+}
+
+
 footer{
   padding: 2.5rem 0;
   background-color: lightblue;
   text-align: center;
+}
+
+.footerlogo p{
+  display: inline-block;
+}
+
+footer p{
+  margin-bottom: 1rem;
 }
 
 /* Media Queries */
@@ -238,6 +268,13 @@ footer{
     height: 9.4rem;
     background: url("images/medium-wave.png");
     background-size: cover;
+  }
+
+  .lowerImage::before{
+    height: 9.4rem;
+    background: url("images/medium-wave-reverse.png");
+    background-size: cover;
+    top: -1.2rem;
   }
 }
 
@@ -284,7 +321,7 @@ footer{
     position: absolute;
     left: 0;
     bottom: -1rem;
-    background-color: yellowgreen;
+    background-color: rgb(89, 140, 180);
     width: 100%;
     height: 2px;
     transform: scaleX(0);
@@ -320,10 +357,25 @@ footer{
     background: url("images/large-wave.png");
     background-size: cover;
   }
+  .lowerImage::before{
+    height: 22.7rem;
+    background: url("images/large-wave-reverse.png");
+    background-size: cover;
+    top:-3.5rem;
+  }
 }
 
 @media screen and (min-width: 1200px){
   .mainMessage{
     height: 75vh;
   }
+
+  .mainMessage p{
+    font-size: 2.5rem;
+  }
+
+  .mainMessage h1{
+    font-size: 5.5rem;
+  }
+
 }
