@@ -211,6 +211,7 @@ nav{
   margin-bottom: 2rem;
 }
 
+
 .about-us{
   /* place images later */
 }
@@ -287,6 +288,7 @@ footer p{
     background-size: cover;
     top: -1.2rem;
   }
+
 }
 
 @media screen and (min-width: 700px){
@@ -358,6 +360,12 @@ footer p{
 
   .title-heading h1{
     font-size: 2.5rem;
+  }
+
+
+  .about-grid iframe{
+  width: 560px;
+  height: 315px;
   }
 
 }
