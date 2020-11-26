@@ -108,7 +108,7 @@ nav{
 .mainMessage{
   width: 100%;
   height: 80vh;
-  background: linear-gradient(135deg, rgba(49,24,131,0.3) 0%, rgba(72,56,149, 0.8)100%);
+  background: linear-gradient(135deg, rgba(232,185,16,0.9) 0%, rgba(250,218,102,0.8)100%),url("images/trumpet.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -167,11 +167,11 @@ nav{
 
 /* Hovering over a button */
 .button:hover{
-  background-color: yellow;
+  background-color: rgb(47, 86, 117);
 }
 
 .regbutton:hover{
-  background-color: yellow;
+  background-color: rgb(47, 86, 117);
 }
 
 /* WHO WE ARE SECTION */
@@ -204,7 +204,6 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
 }
 
 .whoweare-grid-item::before{
@@ -214,7 +213,7 @@ nav{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(135deg, rgba(49,24,131,0.3) 0%, rgba(72,56,149, 0.8)100%);
+  background-image: linear-gradient(135deg, rgba(89, 140, 180,0.9) 100%, rgba(124, 193, 247, 0.3)0%);
   z-index: -1;
 }
 
@@ -227,19 +226,6 @@ nav{
 
 .about-grid p{
   margin-bottom: 2rem;
-}
-
-
-.about-us{
-  /* place images later */
-}
-
-.our-projects{
-  /* place images later */
-}
-
-.join{
-  /* place images later */
 }
 
 .whoweare-grid-item i{
@@ -255,7 +241,7 @@ nav{
 .lowerImage{
   width: 100%;
   height: 40vh;
-  background: linear-gradient(135deg, rgba(49,24,131,0.3) 0%, rgba(72,56,149, 0.8)100%);
+  background: linear-gradient(135deg, rgba(232,185,16,0.9) 0%, rgba(250,218,102,0.8)100%), url("images/happyguitar.png") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -274,7 +260,7 @@ nav{
 
 footer{
   padding: 2.5rem 0;
-  background-color: lightblue;
+  background-color: rgb(89, 140, 180);
   text-align: center;
 }
 
@@ -290,8 +276,7 @@ footer p{
 .wrapper{
   max-width: 500px;
   width: 100%;
-  background: yellow;
-  margin: 20px auto;
+  background: linear-gradient(135deg, rgba(232,185,16,0.9) 0%, rgba(250,218,102,0.8)100%);
   padding: 30px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125)
 }
@@ -300,7 +285,7 @@ footer p{
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color:aquamarine;
+  color:#fafafa;
   text-transform: uppercase;
   text-align: center;
 }
