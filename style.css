@@ -151,8 +151,26 @@ nav{
   transition: background-color 500ms;
 }
 
+.regbutton{
+  background-color: rgb(89, 140, 180);
+  border-radius: 2rem;
+  color: #fafafa;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  transition: background-color 500ms;
+  display: flex;
+  justify-content: center;
+}
+
 /* Hovering over a button */
 .button:hover{
+  background-color: yellow;
+}
+
+.regbutton:hover{
   background-color: yellow;
 }
 
@@ -266,6 +284,56 @@ footer{
 
 footer p{
   margin-bottom: 1rem;
+}
+
+/* Registration Form Styling  inspired by*/
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: yellow;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125)
+}
+
+.wrapper .reg-title{
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color:aquamarine;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .input_field{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .input_field label{
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 1.4rem; 
+}
+
+.wrapper .form .input_field .input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 1.5rem;
+  padding: 8px 10px;
+  border-radius: 3;
+  transition: all 0.3s ease;
 }
 
 /* Media Queries */
